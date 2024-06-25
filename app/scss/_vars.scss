@@ -1,0 +1,41 @@
+:root {
+  --header-height: 110px;
+  --container-width: 1210px;
+  --container-padding: 0 20px;
+  --accent-color-rgb: 44, 100, 235;
+  --positive-color-rgb: 83, 145, 0;
+  --positive-color: #539100;
+  --accent-green: #539100;
+  --accent-green-rgb: 83, 145, 0;
+  --negative-color: #cc5249;
+  --negative-color-rgb: 204, 82, 73;
+  --accent-red: #cc5249;
+  --accent-red-rgb: 204, 82, 73;
+
+  --gray: #292e33;
+
+  --gray-rgb: 41, 46, 51;
+
+  --accent-color: #2c64eb;
+  --accent-blue: #2c64eb;
+  --accent-blue-rgb: 44, 100, 235;
+
+  --bg-color-main: #ffffff;
+  --bg-color-secondary: #f9f9f9;
+  --global-text-color: #000000;
+  --text-color-secondary: #494b49;
+  --color-gray: #d3d3d3;
+
+  --black: #000000;
+  --white: #ffffff;
+  --black-rgb: 0, 0, 0;
+  color: rgba(24, 115, 235, 0.35);
+
+  @media (max-width: 1120px) {
+    --header-height: 62px;
+  }
+
+  @media (max-width: 420px) {
+    --header-height: 42px;
+  }
+}

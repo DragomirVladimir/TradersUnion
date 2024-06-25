@@ -1,0 +1,34 @@
+{
+  "name": "gulp",
+  "version": "1.0.0",
+  "description": "gulp",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "drag-v",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.24.3",
+    "@babel/preset-env": "^7.24.3",
+    "browser-sync": "^2.27.9",
+    "chartjs-plugin-gradient": "^0.6.1",
+    "del": "^6.0.0",
+    "fslightbox": "^3.4.1",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-uglify": "^3.0.2",
+    "jquery": "^3.6.0",
+    "mixitup": "^3.3.1",
+    "sass": "^1.50.0"
+  },
+  "dependencies": {
+    "chart.js": "^4.4.3",
+    "chartjs-plugin-annotation": "^3.0.1",
+    "swiper": "^11.0.7"
+  }
+}

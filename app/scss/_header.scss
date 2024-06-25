@@ -1,0 +1,131 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  border-bottom: 1px solid #e1e1e1;
+  z-index: 100;
+
+  background-color: var(--bg-color-main);
+
+  &__main {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    // width: 100%;
+    padding: 16px 0;
+
+    background-color: var(--bg-color-secondary);
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 300%;
+      height: 100%;
+      left: 0;
+      right: 0;
+      transform: translateX(-33%);
+      background-color: inherit;
+      z-index: -1;
+    }
+
+    @media (max-width: 1120px) {
+      background-color: var(--bg-color-main);
+    }
+
+    @media (max-width: 420px) {
+      padding: 6px 0;
+    }
+  }
+
+  &__title {
+    font-size: 20px;
+    line-height: 1.4;
+    font-weight: 700;
+
+    @media (max-width: 1120px) {
+      display: none;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 5px 0;
+
+    @media (max-width: 1120px) {
+      position: absolute;
+      top: var(--header-height);
+      right: 0;
+      background-color: #f3f7ed;
+      z-index: 10;
+      flex-direction: column;
+      padding: 70px 20px;
+      width: 100%;
+      max-width: 420px;
+      height: calc(100vh - var(--header-height));
+      transform: translateX(120%);
+      overflow-y: auto;
+
+      transition: transform 0.3s ease;
+
+      &.active {
+        transform: translateX(0);
+      }
+    }
+  }
+
+  &__nav-list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+
+    @media (max-width: 1120px) {
+      flex-direction: column;
+      width: 100%;
+    }
+  }
+
+  &__nav-item {
+    @media (max-width: 1120px) {
+      width: 100%;
+    }
+  }
+
+  &__nav-link {
+    line-height: 1.7;
+    font-weight: 600;
+    transition: color 0.2s ease;
+
+    &:hover {
+      color: var(--accent-color);
+    }
+
+    @media (max-width: 1120px) {
+      display: block;
+      text-align: center;
+    }
+  }
+
+  &__nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  @media (max-width: 1120px) {
+    border-bottom: none;
+  }
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}

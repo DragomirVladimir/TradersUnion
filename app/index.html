@@ -1,0 +1,1022 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title lang="en">Traders Union</title>
+
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="./images/favicons/favicon.ico"
+    />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="./images/favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./images/favicons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./images/favicons/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="./images/favicons/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <link href="css/style.min.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="container">
+          <div class="header__main">
+            <h1 class="header__title">Online Trading Starts Here</h1>
+
+            <a class="logo" href="#home" aria-label="Traders Union">
+              <img
+                class="logo__img"
+                src="./images/logo.svg"
+                alt="Traders Union"
+              />
+            </a>
+
+            <div class="actions">
+              <button class="button button--light">Sign In</button>
+              <button class="button button--default">Register</button>
+            </div>
+
+            <button class="burger-btn" type="button" aria-label="Navigation">
+              <span class="burger-btn__line"></span>
+            </button>
+          </div>
+
+          <nav class="header__nav">
+            <ul class="header__nav-list">
+              <li class="header__nav-item">
+                <a class="header__nav-link" href="#!">BEST BROKERS</a>
+              </li>
+              <li class="header__nav-item">
+                <a class="header__nav-link" href="#!">TRADING GUIDES</a>
+              </li>
+              <li class="header__nav-item">
+                <a class="header__nav-link" href="#!">BROKER REVIEWS</a>
+              </li>
+              <li class="header__nav-item">
+                <a class="header__nav-link" href="#!">PRICE PREDICTIONS</a>
+              </li>
+              <li class="header__nav-item">
+                <a class="header__nav-link" href="#!">BROKERS BY COUNTRIES</a>
+              </li>
+              <li class="header__nav-item">
+                <a class="header__nav-link" href="#!">WHO WE ARE</a>
+              </li>
+            </ul>
+
+            <div class="header__nav-actions">
+              <label class="search">
+                <button class="search__btn" type="button">
+                  <svg
+                    class="icon"
+                    width="19"
+                    height="20"
+                    viewBox="0 0 19 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M7.5 13.9062C10.5376 13.9062 13 11.4438 13 8.40625C13 5.36868 10.5376 2.90625 7.5 2.90625C4.46243 2.90625 2 5.36868 2 8.40625C2 11.4438 4.46243 13.9062 7.5 13.9062ZM7.5 15.9062C11.6421 15.9062 15 12.5484 15 8.40625C15 4.26411 11.6421 0.90625 7.5 0.90625C3.35786 0.90625 0 4.26411 0 8.40625C0 12.5484 3.35786 15.9062 7.5 15.9062Z"
+                      fill="black"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M17.3137 18.9271C17.1184 19.1223 16.8019 19.1223 16.6066 18.9271L12.0214 14.3419C11.8262 14.1466 11.8262 13.8301 12.0214 13.6348L12.7286 12.9277C12.9238 12.7324 13.2404 12.7324 13.4357 12.9277L18.0208 17.5129C18.2161 17.7081 18.2161 18.0247 18.0208 18.22L17.3137 18.9271Z"
+                      fill="black"
+                    />
+                  </svg>
+                </button>
+                <input
+                  class="search__input"
+                  type="search"
+                  name="search"
+                  id="search"
+                />
+              </label>
+              <div class="lang-switcher">
+                <button
+                  class="lang-switcher__btn"
+                  type="button"
+                  aria-label="select language"
+                >
+                  <svg
+                    class="icon"
+                    width="18"
+                    height="19"
+                    viewBox="0 0 18 19"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M9 16.9062C12.866 16.9062 16 13.7722 16 9.90625C16 6.04026 12.866 2.90625 9 2.90625C5.13401 2.90625 2 6.04026 2 9.90625C2 13.7722 5.13401 16.9062 9 16.9062ZM9 18.9062C13.9706 18.9062 18 14.8768 18 9.90625C18 4.93569 13.9706 0.90625 9 0.90625C4.02944 0.90625 0 4.93569 0 9.90625C0 14.8768 4.02944 18.9062 9 18.9062Z"
+                      fill="black"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M10.3931 15.3758C11.0413 14.0793 11.5 12.1484 11.5 9.90625C11.5 7.66413 11.0413 5.73316 10.3931 4.43672C9.68509 3.02065 9.07698 2.90625 9 2.90625C8.92302 2.90625 8.31491 3.02065 7.60687 4.43672C6.95865 5.73316 6.5 7.66413 6.5 9.90625C6.5 12.1484 6.95865 14.0793 7.60687 15.3758C8.31491 16.7919 8.92302 16.9062 9 16.9062C9.07698 16.9062 9.68509 16.7919 10.3931 15.3758ZM9 18.9062C11.4853 18.9062 13.5 14.8768 13.5 9.90625C13.5 4.93569 11.4853 0.90625 9 0.90625C6.51472 0.90625 4.5 4.93569 4.5 9.90625C4.5 14.8768 6.51472 18.9062 9 18.9062Z"
+                      fill="black"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M17.25 10.9062H0.75V8.90625H17.25V10.9062Z"
+                      fill="black"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <div class="base">
+        <main class="main">
+          <section class="hero">
+            <div class="container">
+              <div class="breadcrumbs">
+                <ul class="breadcrumbs__list">
+                  <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__link" href="#!">Traders Union</a>
+                  </li>
+                  <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__link" href="#!"
+                      >Live quotes and charts</a
+                    >
+                  </li>
+                  <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__link" href="#!">EUR/USD</a>
+                  </li>
+                </ul>
+
+                <a
+                  class="breadcrumbs__main-link"
+                  href="https://tradersunion.com/brokers/forex/view/roboforex/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  referrerpolicy="no-referrer"
+                  >Advertiser Disclosure</a
+                >
+              </div>
+
+              <div class="currency-widget">
+                <h2 class="title">EUR/USD - Euro US Dollar</h2>
+
+                <div class="currency-widget__wrapper">
+                  <div class="currency-widget__info">
+                    <div class="currency-widget__rate positive">
+                      <div class="currency-widget__rate-value">1.0873</div>
+                      <div class="currency-widget__rate-change">
+                        <span class="currency-widget__rate-change-value"
+                          >+0.24%</span
+                        >
+                        <svg
+                          class="currency-widget__rate-icon"
+                          width="20"
+                          height="20"
+                          viewBox="0 0 20 20"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path d="M13 19H7L7 10L13 10L13 19Z" fill="none" />
+                          <path d="M10 1L16 10L4 10L10 1Z" fill="none" />
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="currency-widget__time">
+                      <div class="currency-widget__time-wrapper">
+                        <span class="currency-widget__time-title"
+                          >Real-time Data</span
+                        >
+                        <span class="currency-widget__time-value"
+                          >12:05:46</span
+                        >
+                      </div>
+
+                      <a class="currency-widget__link" href="#!">
+                        Disclaimer
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="currency-widget__changes">
+                    <div class="currency-widget__change">
+                      <span class="currency-widget__change-title"
+                        >Week change</span
+                      >
+                      <div class="currency-widget__range positive">
+                        <span class="currency-widget__range-start">1.0762</span>
+                        <div class="currency-widget__range-progress">
+                          <div
+                            class="currency-widget__range-progress-line"
+                            style="width: 90%"
+                          >
+                            <svg
+                              class="currency-widget__range-arrow"
+                              width="6"
+                              height="10"
+                              viewBox="0 0 6 10"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M6 5L-2.59292e-07 9.5L1.3411e-07 0.5L6 5Z"
+                                fill="none"
+                              />
+                            </svg>
+                          </div>
+                        </div>
+                        <span class="currency-widget__range-end">1.0810</span>
+                      </div>
+                    </div>
+                    <div class="currency-widget__change">
+                      <span class="currency-widget__change-title"
+                        >Month change</span
+                      >
+                      <div class="currency-widget__range negative">
+                        <span class="currency-widget__range-start">1.0762</span>
+                        <div class="currency-widget__range-progress">
+                          <div
+                            class="currency-widget__range-progress-line"
+                            style="width: 90%"
+                          >
+                            <svg
+                              class="currency-widget__range-arrow"
+                              width="6"
+                              height="10"
+                              viewBox="0 0 6 10"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M6 5L-2.59292e-07 9.5L1.3411e-07 0.5L6 5Z"
+                                fill="none"
+                              />
+                            </svg>
+                          </div>
+                        </div>
+                        <span class="currency-widget__range-end">1.0910</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="digest">
+              <div class="container">
+                <div class="digest__head">
+                  <div class="digest__buttons">
+                    <ul class="digest__buttons-list">
+                      <li class="digest__buttons-item active">
+                        <button class="digest__btn active" type="button">
+                          Currency pairs
+                        </button>
+                      </li>
+                      <li class="digest__buttons-item">
+                        <button class="digest__btn" type="button">
+                          Cryptocurrencies
+                        </button>
+                      </li>
+                      <li class="digest__buttons-item">
+                        <button class="digest__btn" type="button">
+                          Stocks
+                        </button>
+                      </li>
+                      <li class="digest__buttons-item">
+                        <button class="digest__btn" type="button">
+                          Indices
+                        </button>
+                      </li>
+                      <li class="digest__buttons-item">
+                        <button class="digest__btn" type="button">
+                          Commodities
+                        </button>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="digest__share">
+                    <div class="digest__share-title">Share:</div>
+                    <ul class="digest__share-list">
+                      <li class="digest__share-item">
+                        <a href="#">
+                          <svg
+                            width="19"
+                            height="18"
+                            viewBox="0 0 19 18"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M11.6918 2.98875H13.4063V0.12675C13.1105 0.08775 12.0932 0 10.9084 0C8.43639 0 6.74296 1.49025 6.74296 4.22925V6.75H4.01501V9.9495H6.74296V18H10.0876V9.95025H12.7052L13.1207 6.75075H10.0868V4.5465C10.0876 3.62175 10.3474 2.98875 11.6918 2.98875V2.98875Z"
+                              fill="black"
+                              fill-opacity="0.7"
+                            />
+                          </svg>
+                        </a>
+                      </li>
+                      <li class="digest__share-item">
+                        <a href="#">
+                          <svg
+                            width="18"
+                            height="18"
+                            viewBox="0 0 18 18"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <g clip-path="url(#clip0_2030_82)">
+                              <path
+                                d="M10.7203 7.62262L17.4167 0H15.8304L10.0134 6.61726L5.37093 0H0.0150146L7.03694 10.0074L0.0150146 17.9999H1.60129L7.74015 11.0104L12.644 17.9999H18M2.17381 1.17142H4.61077L15.8292 16.8861H13.3916"
+                                fill="black"
+                                fill-opacity="0.7"
+                              />
+                            </g>
+                            <defs>
+                              <clipPath id="clip0_2030_82">
+                                <rect
+                                  width="17.985"
+                                  height="18"
+                                  fill="white"
+                                  transform="translate(0.0150146)"
+                                />
+                              </clipPath>
+                            </defs>
+                          </svg>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="swiper digest__slider">
+                  <div class="swiper-wrapper digest__list">
+                    <div class="swiper-slide digest__item">
+                      <div class="digest-card positive">
+                        <div class="digest-card__label">
+                          <svg
+                            class="digest-card__label-icon"
+                            width="20"
+                            height="20"
+                            viewBox="0 0 20 20"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path d="M13 19H7L7 10L13 10L13 19Z" fill="none" />
+                            <path d="M10 1L16 10L4 10L10 1Z" fill="none" />
+                          </svg>
+                        </div>
+
+                        <div class="digest-card__info">
+                          <div class="digest-card__info-item">
+                            <div class="digest-card__title">LTC/USD</div>
+                            <div class="digest-card__change">+0.19%</div>
+                          </div>
+                          <div class="digest-card__info-item">
+                            <div class="digest-card__rate">1.0798</div>
+                            <div class="digest-card__value">+0.056</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide digest__item">
+                      <div class="digest-card negative">
+                        <div class="digest-card__label">
+                          <svg
+                            class="digest-card__label-icon"
+                            width="20"
+                            height="20"
+                            viewBox="0 0 20 20"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path d="M13 19H7L7 10L13 10L13 19Z" fill="none" />
+                            <path d="M10 1L16 10L4 10L10 1Z" fill="none" />
+                          </svg>
+                        </div>
+
+                        <div class="digest-card__info">
+                          <div class="digest-card__info-item">
+                            <div class="digest-card__title">BTC/USD</div>
+                            <div class="digest-card__change">+0.19%</div>
+                          </div>
+                          <div class="digest-card__info-item">
+                            <div class="digest-card__rate">1.0798</div>
+                            <div class="digest-card__value">+0.056</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide digest__item">
+                      <div class="digest-card positive">
+                        <div class="digest-card__label">
+                          <svg
+                            class="digest-card__label-icon"
+                            width="20"
+                            height="20"
+                            viewBox="0 0 20 20"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path d="M13 19H7L7 10L13 10L13 19Z" fill="none" />
+                            <path d="M10 1L16 10L4 10L10 1Z" fill="none" />
+                          </svg>
+                        </div>
+
+                        <div class="digest-card__info">
+                          <div class="digest-card__info-item">
+                            <div class="digest-card__title">USDT/USD</div>
+                            <div class="digest-card__change">+0.19%</div>
+                          </div>
+                          <div class="digest-card__info-item">
+                            <div class="digest-card__rate">1.0798</div>
+                            <div class="digest-card__value">+0.056</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide digest__item">
+                      <div class="digest-card positive">
+                        <div class="digest-card__label">
+                          <svg
+                            class="digest-card__label-icon"
+                            width="20"
+                            height="20"
+                            viewBox="0 0 20 20"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path d="M13 19H7L7 10L13 10L13 19Z" fill="none" />
+                            <path d="M10 1L16 10L4 10L10 1Z" fill="none" />
+                          </svg>
+                        </div>
+
+                        <div class="digest-card__info">
+                          <div class="digest-card__info-item">
+                            <div class="digest-card__title">ETH/USD</div>
+                            <div class="digest-card__change">+0.19%</div>
+                          </div>
+                          <div class="digest-card__info-item">
+                            <div class="digest-card__rate">1.0798</div>
+                            <div class="digest-card__value">+0.056</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide digest__item">
+                      <div class="digest-card positive">
+                        <div class="digest-card__label">
+                          <svg
+                            class="digest-card__label-icon"
+                            width="20"
+                            height="20"
+                            viewBox="0 0 20 20"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path d="M13 19H7L7 10L13 10L13 19Z" fill="none" />
+                            <path d="M10 1L16 10L4 10L10 1Z" fill="none" />
+                          </svg>
+                        </div>
+
+                        <div class="digest-card__info">
+                          <div class="digest-card__info-item">
+                            <div class="digest-card__title">BNB/USD</div>
+                            <div class="digest-card__change">+0.19%</div>
+                          </div>
+                          <div class="digest-card__info-item">
+                            <div class="digest-card__rate">1.0798</div>
+                            <div class="digest-card__value">+0.056</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <div class="info">
+            <div class="container">
+              <div class="tab-buttons swiper">
+                <div class="tab-buttons__wrapper swiper-wrapper">
+                  <div class="tab-buttons__item swiper-slide">
+                    <button
+                      class="tab-buttons__btn"
+                      data-tab="current"
+                      type="button"
+                    >
+                      Current Outlook
+                    </button>
+                  </div>
+                  <div class="tab-buttons__item swiper-slide">
+                    <button
+                      class="tab-buttons__btn"
+                      data-tab="technicals"
+                      type="button"
+                    >
+                      Technicals and Signals
+                    </button>
+                  </div>
+                  <div class="tab-buttons__item swiper-slide">
+                    <button
+                      class="tab-buttons__btn active"
+                      data-tab="longForecast"
+                      type="button"
+                    >
+                      Long Term Forecast
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="info__wrapper">
+                <div class="info__content">
+                  <div class="tabs">
+                    <div
+                      class="tabs__item"
+                      data-tab="current"
+                      style="display: none"
+                    >
+                      <section class="section">
+                        <h3 class="title section__title">Some title</h3>
+
+                        <p>Any content</p>
+                        <p>
+                          Lorem ipsum dolor, sit amet consectetur adipisicing
+                          elit. Molestias laborum, error eveniet voluptate
+                          voluptatem quam voluptates a illum non reiciendis
+                          magni qui consectetur numquam eos pariatur nobis?
+                          Optio, quasi magni.
+                        </p>
+                      </section>
+                    </div>
+                    <div
+                      class="tabs__item"
+                      data-tab="technicals"
+                      style="display: none"
+                    >
+                      <section class="section">
+                        <h3 class="title section__title">Some title</h3>
+
+                        <p>Some content</p>
+                        <p>
+                          Lorem ipsum dolor, sit amet consectetur adipisicing
+                          elit. Molestias laborum, error eveniet voluptate
+                          voluptatem quam voluptates a illum non reiciendis
+                          magni qui consectetur numquam eos pariatur nobis?
+                          Optio, quasi magni.
+                        </p>
+                      </section>
+                    </div>
+
+                    <div class="tabs__item" data-tab="longForecast">
+                      <section class="section сonverter">
+                        <h3 class="title section__title">
+                          EUR/USD Price Forecast for 2024, 2025
+                        </h3>
+
+                        <div class="converter__wrapper">
+                          <div class="converter__panel">
+                            <h4 class="converter__panel-title">Converter</h4>
+                            <div class="converter__form">
+                              <div class="converter__form-label">
+                                <input
+                                  id="inputAmount"
+                                  class="converter__form-input"
+                                  type="number"
+                                  value="1000"
+                                />
+                                <span class="converter__currency">USD</span>
+                              </div>
+                              <button
+                                id="swapBtn"
+                                class="converter__form-btn"
+                                aria-label="Swap Currencies"
+                              >
+                                <svg
+                                  class="converter__form-btn-icon"
+                                  width="26"
+                                  height="26"
+                                  viewBox="0 0 26 26"
+                                  fill="none"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <path
+                                    d="M21.5937 12.2656V10.4023C21.5937 8.46073 20.0197 6.88672 18.0781 6.88672H5.94922M5 13.7188V15.6172C5 17.5588 6.57402 19.1328 8.51562 19.1328H20.6445M17.4102 23L21.2773 19.1328L17.4102 15.2656M9.18359 10.7539L5.31641 6.88672L9.18359 3.01953"
+                                    stroke="#455A64"
+                                    stroke-width="1.8"
+                                    stroke-miterlimit="10"
+                                  />
+                                </svg>
+                              </button>
+                              <div class="converter__form-label">
+                                <div
+                                  id="outputAmount"
+                                  class="converter__form-output"
+                                >
+                                  0,0149
+                                </div>
+                                <span class="converter__currency">BTC</span>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="converter__info">
+                            <ul class="converter__info-list">
+                              <li class="converter__info-item">
+                                <div class="converter__info-item-title">
+                                  Prev. Close
+                                </div>
+                                <div class="converter__info-item-value">
+                                  1.0777
+                                </div>
+                              </li>
+                              <li class="converter__info-item">
+                                <div class="converter__info-item-title">
+                                  Open
+                                </div>
+                                <div class="converter__info-item-value">
+                                  1.0082
+                                </div>
+                              </li>
+                              <li class="converter__info-item">
+                                <div class="converter__info-item-title">
+                                  Month Range
+                                </div>
+                                <div class="converter__info-item-value">
+                                  1.0762-1.0825
+                                </div>
+                              </li>
+                              <li class="converter__info-item">
+                                <div class="converter__info-item-title">
+                                  52 wk Range
+                                </div>
+                                <div class="converter__info-item-value">
+                                  1.0062-1.0082
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+
+                          <div class="converter__btn-box">
+                            <a class="button button--big" href="#!"
+                              >START TRADING XRP/USD</a
+                            >
+
+                            <div class="converter__description">
+                              Your capital is at risk
+                            </div>
+                          </div>
+                        </div>
+                      </section>
+
+                      <section class="section general">
+                        <h3 class="title section__title">
+                          Euro / U.S Dollar Forecast
+                        </h3>
+
+                        <div class="general__wrapper">
+                          <ul class="general__list">
+                            <li class="general__list-item">
+                              <div class="general__list-counter"></div>
+                              <p>
+                                Current Bitcoin (BTC) price
+                                <span data-current-price="btc">XXX</span>.
+                              </p>
+                            </li>
+
+                            <li class="general__list-item">
+                              <div class="general__list-counter"></div>
+                              <p>
+                                According to analytical forecasts, the price of
+                                EUR/USD may reach
+                                <span data-current-price="eur">XXX</span> by the
+                                end of 2024, and it is expected to be
+                                <span data-forecast-price="eur">XXX</span>.XXX
+                                by the end of 2025.
+                              </p>
+                            </li>
+
+                            <li class="general__list-item">
+                              <div class="general__list-counter"></div>
+                              <p>
+                                Based on technical analysis indicators, the
+                                recommendation for the D1 (one-day) timeframe is
+                                <span data-day-price="eur">YYY</span>, and for
+                                the W1 (one-week) timeframe -
+                                <span data-week-price="eur">YYY</span>.
+                              </p>
+                            </li>
+                          </ul>
+
+                          <div class="general__text">
+                            <p>
+                              Bitcoin is the most expensive and popular
+                              cryptocurrency that enjoys wide popularity as an
+                              effective means of payment and an excellent
+                              investment option for your savings. The key
+                              feature of Bitcoin is the limited number of
+                              emissions at the software level. The dollars and
+                              euros are being “printed” actively, while the
+                              number of newly coined Bitcoins is continuously
+                              dropping whereas the demand remains high.
+                            </p>
+                          </div>
+
+                          <ul class="general__recommendations">
+                            <li
+                              class="general__recommendations-item general__recommendations-item--buy"
+                            >
+                              <div class="general__recommendations-item-body">
+                                <h4 class="general__recommendations-title">
+                                  Strong Buy
+                                </h4>
+                                <div
+                                  class="general__recommendations-description"
+                                >
+                                  <p>
+                                    Recommendation for BTC/USD on the timeframe
+                                  </p>
+                                </div>
+                              </div>
+
+                              <div class="general__recommendations-period">
+                                1Н
+                              </div>
+                            </li>
+
+                            <li
+                              class="general__recommendations-item general__recommendations-item--sell"
+                            >
+                              <div class="general__recommendations-item-body">
+                                <h4 class="general__recommendations-title">
+                                  Strong Sell
+                                </h4>
+                                <div
+                                  class="general__recommendations-description"
+                                >
+                                  <p>
+                                    Recommendation for BTC/USD on the timeframe
+                                  </p>
+                                </div>
+                              </div>
+
+                              <div class="general__recommendations-period">
+                                4Н
+                              </div>
+                            </li>
+
+                            <li
+                              class="general__recommendations-item general__recommendations-item--neutral"
+                            >
+                              <div class="general__recommendations-item-body">
+                                <h4 class="general__recommendations-title">
+                                  Neutral
+                                </h4>
+                                <div
+                                  class="general__recommendations-description"
+                                >
+                                  <p>
+                                    Recommendation for BTC/USD on the timeframe
+                                  </p>
+                                </div>
+                              </div>
+
+                              <div class="general__recommendations-period">
+                                1D
+                              </div>
+                            </li>
+                          </ul>
+
+                          <div class="general__description">
+                            <div class="general__description-text">
+                              <p>
+                                Traders Union a custom-made model based on a
+                                combination of various data and models.
+                              </p>
+                            </div>
+
+                            <a class="general__description-link" href="#!"
+                              >Learn more about how we do it in our
+                              methodology</a
+                            >
+                          </div>
+                        </div>
+                      </section>
+
+                      <section class="section price">
+                        <h3 class="title">
+                          EUR/USD price prediction for 2024-2025 by months
+                        </h3>
+
+                        <div class="price__description">
+                          <p>
+                            The table below shows the forecasts as of the end of
+                            each month in 2024, according to TU analysts price
+                            prediction.
+                          </p>
+                        </div>
+
+                        <div class="price__table">
+                          <div class="select-container">
+                            <div class="select-container__wrapper">
+                              <select
+                                class="select-container__sel"
+                                id="month-select"
+                              >
+                                <option value="June 2024">June 2024</option>
+                                <option value="July 2024">July 2024</option>
+                                <option value="August 2024">August 2024</option>
+                                <option value="September 2024">
+                                  September 2024
+                                </option>
+                                <option value="October 2024">
+                                  October 2024
+                                </option>
+                                <option value="November 2024">
+                                  November 2024
+                                </option>
+                                <option value="December 2024">
+                                  December 2024
+                                </option>
+                                <option value="January 2025">
+                                  January 2025
+                                </option>
+                                <option value="February 2025">
+                                  February 2025
+                                </option>
+                                <option value="March 2025">March 2025</option>
+                                <option value="April 2025">April 2025</option>
+                                <option value="May 2025">May 2025</option>
+                              </select>
+                            </div>
+                          </div>
+
+                          <table class="table">
+                            <thead class="table__thead">
+                              <tr>
+                                <th>Month</th>
+                                <th>Minimum Price</th>
+                                <th>Maximum Price</th>
+                                <th>Average Price</th>
+                              </tr>
+                            </thead>
+                            <tbody class="table__body" id="table-body">
+                              <tr data-month="June 2024">
+                                <td>June 2024</td>
+                                <td>$59,944.84</td>
+                                <td>$73,265.92</td>
+                                <td>$66,605.38</td>
+                              </tr>
+                              <tr data-month="July 2024">
+                                <td>July 2024</td>
+                                <td>$60,244.57</td>
+                                <td>$73,632.25</td>
+                                <td>$66,938.41</td>
+                              </tr>
+                              <tr data-month="August 2024">
+                                <td>August 2024</td>
+                                <td>$60,545.79</td>
+                                <td>$74,000.41</td>
+                                <td>$67,273.1</td>
+                              </tr>
+                              <tr data-month="September 2024">
+                                <td>September 2024</td>
+                                <td>$60,848.52</td>
+                                <td>$74,370.42</td>
+                                <td>$67,609.47</td>
+                              </tr>
+                              <tr data-month="October 2024">
+                                <td>October 2024</td>
+                                <td>$61,152.77</td>
+                                <td>$74,742.27</td>
+                                <td>$67,947.52</td>
+                              </tr>
+                              <tr data-month="November 2024">
+                                <td>November 2024</td>
+                                <td>$61,458.53</td>
+                                <td>$75,115.99</td>
+                                <td>$68,287.26</td>
+                              </tr>
+                              <tr data-month="December 2024">
+                                <td>December 2024</td>
+                                <td>$61,765.83</td>
+                                <td>$75,491.57</td>
+                                <td>$68,628.7</td>
+                              </tr>
+                              <tr data-month="January 2025">
+                                <td>January 2025</td>
+                                <td>$62,074.66</td>
+                                <td>$75,869.02</td>
+                                <td>$66,605.38</td>
+                              </tr>
+                              <tr data-month="February 2025">
+                                <td>February 2025</td>
+                                <td>$62,385.03</td>
+                                <td>$73,632.25</td>
+                                <td>$66,938.41</td>
+                              </tr>
+                              <tr data-month="March 2025">
+                                <td>March 2025</td>
+                                <td>$62,696.95</td>
+                                <td>$74,000.41</td>
+                                <td>$67,273.1</td>
+                              </tr>
+                              <tr data-month="April 2025">
+                                <td>April 2025</td>
+                                <td>$63,010.44</td>
+                                <td>$74,370.42</td>
+                                <td>$67,609.47</td>
+                              </tr>
+                              <tr data-month="May 2025">
+                                <td>May 2025</td>
+                                <td>$63,325.49</td>
+                                <td>$74,742.27</td>
+                                <td>$67,947.52</td>
+                              </tr>
+                            </tbody>
+                          </table>
+
+                          <div id="mobile-table" class="mobile-table"></div>
+                        </div>
+                      </section>
+
+                      <section class="section chart">
+                        <h3 class="title section__title">
+                          EUR/USD Price Forecast for 2024: Chart Analysis
+                        </h3>
+
+                        <div class="chart__wrapper">
+                          <canvas id="myChart"></canvas>
+                        </div>
+                      </section>
+                    </div>
+                  </div>
+                </div>
+                <aside class="aside">
+                  <article class="ad-poster">
+                    <div class="ad-poster__logo">
+                      <img src="./images/pocket.png" alt="pocket" />
+                    </div>
+
+                    <div class="ad-poster__body">
+                      <h1 class="ad-poster__title">50% Deposit Bonus</h1>
+                      <div class="ad-poster__text">
+                        <p>
+                          Open an account on PocketOption, deposit any amount
+                          and get 15% more money for successful trading.
+                        </p>
+                      </div>
+
+                      <div class="ad-poster__button-box">
+                        <a class="button button--big">Receive Bonus</a>
+                        <div class="ad-poster__button-description">
+                          Your capital is at risk
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                </aside>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <script src="js/main.min.js"></script>
+    <script></script>
+  </body>
+</html>
